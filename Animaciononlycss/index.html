@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="transitions.css">
+    <title>Formulario Animado</title>
+</head>
+
+<body>
+
+    <main>
+
+        <form class="closed" action="#">
+            <div class="content">
+
+                <h2>¡Formulario animado!</h2>
+
+                <div class="input-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" placeholder="Santiago Ruberto" id="name" name="name">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="text" placeholder="santiagoruberto@mail.com" id="email" name="email">
+                </div>
+
+                <div class="input-group">
+                    <label for="address">Dirección:</label>
+                    <input type="text" placeholder="873 Salta, Paraná, Entre Ríos" id="address" name="address">
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Teléfono:</label>
+                    <input type="text" placeholder="343 458 8915" id="phone" name="phone">
+                </div>
+
+                <div class="radio-group">
+
+                    <p class="label">Género:</p>
+
+                    <input type="radio" name="gender" id="man" value="man">
+                    <label for="man">Hombre:</label>
+
+                    <input type="radio" name="gender" id="woman" value="woman">
+                    <label for="woman">Mujer:</label>
+
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">Acepto los términos y condiciones</label>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                </div>
+
+            </div>
+        </form>
+
+        <div class="button-container" id="open-form">
+            <button type="button" onclick="document.querySelector('form').classList.remove('closed')">Abrir
+                formulario</button>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
